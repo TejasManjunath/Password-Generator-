@@ -1,0 +1,277 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href=".\maincss.css" />
+    <title>W3B51T3</title>
+</head>
+<body>
+  <!--
+  <body style="background-image: url('password1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">-->
+    <div class="header">
+        <nav>
+          <a href="./index.html"><h1>W3B51T3</h1></a>
+           <!-- <img src="images/logo.png" class="logo">-->
+            <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="https://github.com/TejasManjunath">Portfolio</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+            <img src="./images/menu.png" class="menu-icon">
+        </nav>
+
+        <div class="text-box">
+            <h1><span class="auto-input"></span><br>Password Generator</h1>
+            <p >Generate your Password Below </p>
+            <!--
+            <a href="">Contact Me</a>
+            <a href="" class="btn">Contact Me</a>-->
+        </div>
+        
+
+    
+
+        <div class="container">
+            <div class="tab-container">
+              <div class="tab-filter-container">
+                <li class="filter-btn active" data-tab="custompswd">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                  Custom Password
+                </li>
+                <li class="filter-btn" data-tab="memopswd">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                  MEMORABLE Password
+                </li>
+                
+                
+              </div>
+      
+      
+              <div class="tab-filter-item-container" style="height:500px">
+                <div class="tab-item custompswd select_tab">
+                  <div class="tab-content-right">
+                    <h1 class="tab-heading">Custom Password</h1>
+      
+                    <div class="options">
+                      <div class="slidecontainer"> 
+                          <label for="length">Password Length:</label><br>
+                          <input type="number"  id="length"  value="" min="1" max="50" onchange="setSlider(this)" />
+                          <input type="range" min="1" max="50" oninput="myFunction(this)"
+                          value="8" class="slider" id="myRange"/> 
+                           
+                      </div> 
+                      <!--
+                      <input type="number" id="lengthex" min="6" max="50" value="12">-->
+                      <br>
+                      <input type="checkbox" id="uppercase" checked>
+                      <label for="uppercase">Include Uppercase Letters</label>
+                      <br>
+                      <input type="checkbox" id="lowercase" checked>
+                      <label for="Lowercase">Include LowerCase Letters</label>
+                      <br>
+                      <input type="checkbox" id="numbers" checked>
+                      <label for="numbers">Include Numbers</label>
+                      <br>
+                      <input type="checkbox" id="symbols" checked>
+                      <label for="symbols">Include Symbols</label>
+                      <br>
+                      <div class="gene" >
+                      <button id="generate"><img src="./images/generate.png"> Generate Password</button>
+                      </div> 
+                  </div>
+                  <div class="display" >
+                      <input type="text" id="password" placeholder="Password" value="" size="50">
+                      <img src="./images/copy.png" onclick="copyPassword()" >
+                  </div>
+                  <div id="passwordStrength" style="font-size:20px"></div>
+                    
+                  </div>
+                </div>
+      
+      
+                <div class="tab-item memopswd">
+                  <div class="tab-content-left">
+                    <h1 class="tab-heading">Memorable Password Generator</h1>
+                    
+                      <p>Click the button to generate a memorable password:</p>
+                      <div class="gene">
+                          <button id="generateButton"><img src="./images/generate.png"> Generate Password</button>
+                      </div>
+                      
+                      <div class="display">
+                      <input type="text" id="passwordBox" placeholder="Generated Password" size="50">
+                      <img src="./images/copy.png" onclick="copyPassword2()">
+          
+                      
+                      </div> 
+                      <div id="passwordStrength1"></div>
+                  </div>
+                  <!--
+                  <div class="tab-content-right">
+                    <img
+                      src="images/web-development.jpg"
+                      alt="web development"
+                      class="tab-img"
+                    />
+                  </div>-->
+                </div>
+      
+      
+                <div class="tab-item readpswd">
+                  <div class="tab-content-left">
+                    
+                  </div>
+                  <div class="tab-content-right">
+                    <h1 class="tab-heading">Pending code</h1>
+                    <p class="paragraph">
+                      
+                    </p>
+                    <a href="#!" class="btn-primary">Read More</a>
+                  </div>
+                </div>
+      
+      
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          <section id="strong-password-section">
+            <h2>How to Make a Strong Password</h2>
+            <p>Creating a strong password is crucial for protecting your online accounts. Follow these guidelines:</p>
+            
+            <ul class="password-tips">
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                      <div class="icon">1 </div>
+                      <div class="icon2"><img src="./images/img1.png"></div>
+                  </div>
+                  <p><strong>Use a Combination of Characters:</strong> Include uppercase letters, lowercase letters, numbers, and special symbols.</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                    <div class="icon">2 </div>
+                    <div class="icon2"><img src="./images/img2.png"></div>
+                  </div>
+                  <p><strong>Avoid Easily Guessable Information:</strong> Don't use common words, phrases, or personal information like birthdays.</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                    <div class="icon">3 </div>
+                    <div class="icon2"><img src="./images/img3.png"></div>
+                  </div>
+                  <p><strong>Longer Is Better:</strong> Aim for 12-16 characters for added security.                     </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                    <div class="icon">4 </div>
+                    <div class="icon2"><img src="./images/img4.png"></div>
+                    </div>
+                  <p><strong>Avoid Patterns:</strong> Stay away from common keyboard patterns like "12345" or "qwerty."</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                    <div class="icon">5 </div>
+                    <div class="icon2"><img src="./images/img5.png"></div>
+                    </div>
+                  <p><strong>Unique Passwords for Each Account:</strong> Use different passwords for each account.</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="tip">
+                  <div class="iconholder">
+                    <div class="icon">6 </div>
+                    <div class="icon2"><img src="./images/img6.png"></div>
+                  </div>
+                  <p><strong>Password Managers:</strong> Consider using a password manager for secure password storage and generation.</p>
+                </div>
+              </li>
+            </ul>
+          
+            <p>Remember that strong passwords are essential for online security.</p>
+          </section>
+          
+  </div>       
+          
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          
+          
+
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+          ></script>
+          <script src=".\mainjs.js"></script>
+          
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input",{
+            strings: ["Custom" , "Memorable"],
+            typeSpeed: 100,
+            backSpeed:60,
+            loop:true
+        })
+    </script>
+    <footer class="footer">
+        
+    
+      <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+     
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74">
+          <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl">
+          <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://tejasfoxlight74@gmail.com">
+          <ion-icon name="logo-google"></ion-icon>
+          </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath">
+          <ion-icon name="logo-github"></ion-icon>
+          </a></li> 
+      
+      </ul>
+      <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+      <li class="menu__item"><a class="menu__link" href="./contact.html">Contact</a></li>
+
+      </ul>
+      <p>&copy;2023 TEJASM74 | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

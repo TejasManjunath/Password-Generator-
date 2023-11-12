@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>About</title>
+    <link rel = "icon" href = "./images/man.png"  type = "image/x-icon"> 
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #020412;
+            color:#fff
+        }
+        
+        .header{
+            
+            color:#fff;
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+            position:relative;
+        
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px 0 10px;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+            }
+        .menu-icon{
+            width: 35px;
+            cursor: pointer;
+        }
+        nav ul{
+            flex: 1;
+            text-align: right;
+            padding-right: 40px;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 30px;
+        }
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+        nav ul li a:hover{
+            color: #0000ff;
+        }
+
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 17px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        main {
+            text-align: center;
+            
+        }
+        .profile-image {
+            
+            height: auto;
+            max-width: 100%;
+        }
+        .profileimg{
+            width: 50%;
+            padding: 20px;
+        }
+        .info1{
+            width: 50%;
+            padding: 20px;
+            padding-left: 40px;
+            padding-top: 60px;
+        }
+        .about {
+            display: flex;
+            margin: 0 auto;
+            width: 80%;
+        }
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .about{
+            
+            height:auto;
+            padding: 10px;
+        }
+        
+.footer {
+    position: relative;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 40px;
+  }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <nav>
+        <a href="./index.html"><h1>W3B51T3</h1></a>
+       <!-- <img src="images/logo.png" class="logo">-->
+        <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="https://github.com/TejasManjunath">Portfolio</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+        <img src="./images/menu.png" class="menu-icon">
+    </nav>
+   
+    <main>
+        <div class="about">
+            <div class="profileimg">
+                <img class="profile-image" src="./images/PROFILE-PIC.png" alt="Your Name">
+            </div>
+            <div class="info1">
+            <h1>So,Who am i ?</h1>
+            <h2>I am Tejas M</h2>
+                <p>
+                   A student at New Horizon college 
+                </p>
+                <p>
+                    Currently Studying Bachelor of Computer Application.
+                
+                </p>
+            <h2>What is this ?</h2>
+                <p>
+                   This is a Password Generator with a custom password generator option and a memorable password genrator option and a password strenght checker.
+                </p>
+                <p>
+                   This is a website created by me for my project in the Portfolio WEB51T3.
+                </p>
+                </p>
+                <p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer class="footer">
+        
+    
+        <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/TEJASM74" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/tejasm74" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/_tejas_m7_/?igshid=dDB3MnQ3bjZtcGRl" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://tejas.m74t@gmail.com" target="_blank">
+                <ion-icon name="logo-google"></ion-icon>
+                </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/TejasManjunath" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+            </a></li> 
+        
+        </ul>
+        <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="./index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="./about.html">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://github.com/TejasManjunath">Portfolio</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+  
+        </ul>
+        <p style="text-align: center;">&copy;2023 TEJASM74 | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
